@@ -1,9 +1,37 @@
-*.pyc
-*.swp
-.idea
-*.iml
-build
-dist
-*.egg*
-.DS_Store
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Packaging/build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+*.whl
 *.zip
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Tool caches/reports
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+
+# Editors/OS
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+.DS_Store
