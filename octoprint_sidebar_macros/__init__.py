@@ -63,7 +63,7 @@ class SidebarMacrosPlugin(octoprint.plugin.SettingsPlugin,
 		)
 		
 __plugin_name__ = "Sidebar Macros"
-__plugin_pythoncompat__ = ">=2.7,<4"  # python 2 and 3
+__plugin_pythoncompat__ = ">=3.7,<4"  # python 3 only
 
 def __plugin_load__():
 	global __plugin_implementation__
