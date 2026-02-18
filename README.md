@@ -5,7 +5,7 @@ Fork maintained by apbarratt. Original plugin by Mikhail Poluboyarinov.
 
 ## Setup
 
-Install via the bundled [Plugin Manager](https://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html)
+Install via the bundled [Plugin Manager](https://docs.octoprint.org/en/main/bundledplugins/pluginmanager.html)
 or manually using this URL:
 
-    https://github.com/apbarratt/octoprint_sidebar_macros/archive/refs/heads/master.zip
+    https://github.com/apbarratt/octoprint_sidebar_macros/archive/refs/heads/main.zip
