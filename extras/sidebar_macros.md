@@ -3,7 +3,7 @@ layout: plugin
 
 id: macro
 title: Sidebar Macros
-description: Plugin for Octoprint to add macros list in sidebar
+description: OctoPrint plugin to create various GCODE macros and display them in the sidebar menu.
 author: apbarratt
 license: MIT
 date: 2020-06-28
@@ -35,4 +35,4 @@ compatibility:
   python: ">=2.7,<3"
 
 ---
-Adds feature to create various gcode macros and display them in sidebar menu
+OctoPrint plugin to create various GCODE macros and display them in the sidebar menu.

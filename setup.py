@@ -7,18 +7,18 @@
 plugin_identifier = "macro"
 
 # The plugin's python package, should be "octoprint_<plugin identifier>", has to be unique
-plugin_package = "octoprint_macro"
+plugin_package = "octoprint_sidebar_macros"
 
 # The plugin's human readable name. Can be overwritten within OctoPrint's internal data via __plugin_name__ in the
 # plugin module
-plugin_name = "Macro"
+plugin_name = "Sidebar Macros"
 
 # The plugin's version. Can be overwritten within OctoPrint's internal data via __plugin_version__ in the plugin module
 plugin_version = "0.3.3"
 
 # The plugin's description. Can be overwritten within OctoPrint's internal data via __plugin_description__ in the plugin
 # module
-plugin_description = """Adds feature to create various gcode macros and display them in sidebar menu"""
+plugin_description = """OctoPrint plugin to create various GCODE macros and display them in the sidebar menu."""
 
 # The plugin's author. Can be overwritten within OctoPrint's internal data via __plugin_author__ in the plugin module
 plugin_author = "apbarratt"

@@ -1,4 +1,4 @@
 include README.md
-recursive-include octoprint_macro/templates *
-recursive-include octoprint_macro/translations *
-recursive-include octoprint_macro/static *
+recursive-include octoprint_sidebar_macros/templates *
+recursive-include octoprint_sidebar_macros/translations *
+recursive-include octoprint_sidebar_macros/static *

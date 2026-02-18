@@ -2,7 +2,7 @@
 from __future__ import absolute_import
 import octoprint.plugin
 
-class SidebarmacrosPlugin(octoprint.plugin.SettingsPlugin,
+class SidebarMacrosPlugin(octoprint.plugin.SettingsPlugin,
                           octoprint.plugin.AssetPlugin,
                           octoprint.plugin.TemplatePlugin):
 
@@ -36,20 +36,20 @@ class SidebarmacrosPlugin(octoprint.plugin.SettingsPlugin,
 
 	def get_template_configs(self):
 		return [
-			dict(type="settings", custom_bindings=True, template="macro_settings.jinja2"),
-			dict(type="sidebar", icon="rocket", custom_bindings=True, template="macro_sidebar.jinja2")
+			dict(type="settings", custom_bindings=True, template="sidebar_macros_settings.jinja2"),
+			dict(type="sidebar", icon="rocket", custom_bindings=True, template="sidebar_macros_sidebar.jinja2")
 		]
 
 	def get_assets(self):
 		return dict(
-			js=["js/macro.js", "js/macro_settings.js"],
-			css=["css/macro.css"]
+			js=["js/sidebar_macros.js", "js/sidebar_macros_settings.js"],
+			css=["css/sidebar_macros.css"]
 		)
 
 	def get_update_information(self):
 		return dict(
 			sidebarmacros=dict(
-				displayName="Macro Plugin",
+				displayName="Sidebar Macros",
 				displayVersion=self._plugin_version,
 				type="github_release",
 				user="apbarratt",
@@ -58,12 +58,13 @@ class SidebarmacrosPlugin(octoprint.plugin.SettingsPlugin,
 				pip="https://github.com/apbarratt/octoprint_sidebar_macros/archive/{target_version}.zip"
 			)
 		)
-	
+		
+__plugin_name__ = "Sidebar Macros"
 __plugin_pythoncompat__ = ">=2.7,<4"  # python 2 and 3
 
 def __plugin_load__():
 	global __plugin_implementation__
-	__plugin_implementation__ = SidebarmacrosPlugin()
+	__plugin_implementation__ = SidebarMacrosPlugin()
 
 	global __plugin_hooks__
 	__plugin_hooks__ = {
