@@ -32,7 +32,7 @@ compatibility:
   - windows
   - macos
   - freebsd
-  python: ">=2.7,<3"
+  python: ">=2.7,<4"
 
 ---
 OctoPrint plugin to create various GCODE macros and display them in the sidebar menu.

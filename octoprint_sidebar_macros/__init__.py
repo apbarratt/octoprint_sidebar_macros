@@ -40,6 +40,9 @@ class SidebarMacrosPlugin(octoprint.plugin.SettingsPlugin,
 			dict(type="sidebar", icon="rocket", custom_bindings=True, template="sidebar_macros_sidebar.jinja2")
 		]
 
+	def is_template_autoescaped(self):
+		return True
+
 	def get_assets(self):
 		return dict(
 			js=["js/sidebar_macros.js", "js/sidebar_macros_settings.js"],
