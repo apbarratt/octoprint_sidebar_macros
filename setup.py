@@ -14,20 +14,20 @@ plugin_package = "octoprint_macro"
 plugin_name = "Macro"
 
 # The plugin's version. Can be overwritten within OctoPrint's internal data via __plugin_version__ in the plugin module
-plugin_version = "0.3.2"
+plugin_version = "0.3.3"
 
 # The plugin's description. Can be overwritten within OctoPrint's internal data via __plugin_description__ in the plugin
 # module
 plugin_description = """Adds feature to create various gcode macros and display them in sidebar menu"""
 
 # The plugin's author. Can be overwritten within OctoPrint's internal data via __plugin_author__ in the plugin module
-plugin_author = "Mikhail Poluboyarinov"
+plugin_author = "apbarratt"
 
 # The plugin's author's mail address.
-plugin_author_email = "mikle.sol@gmail.com"
+plugin_author_email = "andy@barratt.scot"
 
 # The plugin's homepage URL. Can be overwritten within OctoPrint's internal data via __plugin_url__ in the plugin module
-plugin_url = "https://github.com/mike1pol/octoprint_macro"
+plugin_url = "https://github.com/apbarratt/octoprint_sidebar_macros"
 
 # The plugin's license. Can be overwritten within OctoPrint's internal data via __plugin_license__ in the plugin module
 plugin_license = "MIT"

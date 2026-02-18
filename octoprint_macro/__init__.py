@@ -52,10 +52,10 @@ class SidebarmacrosPlugin(octoprint.plugin.SettingsPlugin,
 				displayName="Macro Plugin",
 				displayVersion=self._plugin_version,
 				type="github_release",
-				user="mike1pol",
-				repo="octoprint_macro",
+				user="apbarratt",
+				repo="octoprint_sidebar_macros",
 				current=self._plugin_version,
-				pip="https://github.com/mike1pol/octoprint_macro/archive/{target_version}.zip"
+				pip="https://github.com/apbarratt/octoprint_sidebar_macros/archive/{target_version}.zip"
 			)
 		)
 	
@@ -69,4 +69,3 @@ def __plugin_load__():
 	__plugin_hooks__ = {
 		"octoprint.plugin.softwareupdate.check_config": __plugin_implementation__.get_update_information
 	}
-
