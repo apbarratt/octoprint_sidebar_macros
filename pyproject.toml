@@ -9,6 +9,9 @@ name = "Sidebar-Macros"
 version = "0.3.3"
 description = "OctoPrint plugin to create various GCODE macros and display them in the sidebar menu."
 authors = [
+    { name = "Mikhail Poluboyarinov", email = "mikle.sol@gmail.com" },
+]
+maintainers = [
     { name = "apbarratt", email = "andy@barratt.scot" },
 ]
 requires-python = ">=3.7,<4"

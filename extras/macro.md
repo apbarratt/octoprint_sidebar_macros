@@ -4,7 +4,9 @@ layout: plugin
 id: macro
 title: Sidebar Macros
 description: OctoPrint plugin to create various GCODE macros and display them in the sidebar menu.
-author: apbarratt
+authors:
+- Mikhail Poluboyarinov
+- apbarratt
 license: MIT
 date: 2020-06-28
 homepage: https://github.com/apbarratt/octoprint_sidebar_macros
