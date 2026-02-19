@@ -28,7 +28,7 @@ featuredimage: /assets/img/plugins/macro/main.png
 
 compatibility:
   octoprint:
-  - 1.2.0
+  - 1.4.0
   os:
   - linux
   - windows
