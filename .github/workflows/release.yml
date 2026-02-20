@@ -50,7 +50,7 @@ jobs:
                   in_project = (line == "[project]")
                   continue
               if in_project and line.startswith("version"):
-                  match = re.match(r'version\\s*=\\s*"([^"]+)"', line)
+                  match = re.match(r'version\s*=\s*"([^"]+)"', line)
                   if match:
                       version = match.group(1)
                       break
