@@ -30,7 +30,10 @@ htmlcov/
 
 # Editors/OS
 .idea/
-.vscode/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
 *.iml
 *.swp
 *.swo

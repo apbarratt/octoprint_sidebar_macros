@@ -3,32 +3,73 @@
 version: "3"
 
 env:
-  LOCALES: []  # list your included locales here, e.g. ["de", "fr"]
-  TRANSLATIONS: octoprint_sidebar_macros/translations  # translations folder, do not touch
-
+  LOCALES: [] # list your included locales here, e.g. ["de", "fr"]
+  TRANSLATIONS: octoprint_sidebar_macros/translations # translations folder, do not touch
 
 tasks:
   install:
     desc: Installs the plugin into the current venv
     cmds:
-      - "python -m pip install -e .[develop]"
+      - "python3 -m pip install -e .[develop]"
 
   ### Build related
 
   build:
     desc: Builds sdist & wheel
     cmds:
-      - python -m build --sdist --wheel
+      - python3 -m build --sdist --wheel
 
   build-sdist:
     desc: Builds sdist
     cmds:
-      - python -m build --sdist
+      - python3 -m build --sdist
 
   build-wheel:
     desc: Builds wheel
     cmds:
-      - python -m build --wheel
+      - python3 -m build --wheel
+
+  ### Linting stuff
+
+  lint-py:
+    desc: Lint Python sources with Ruff
+    cmds:
+      - python3 -m ruff check .
+
+  format-py:
+    desc: Format Python sources with Ruff
+    cmds:
+      - python3 -m ruff format .
+
+  format-py-check:
+    desc: Check Python formatting with Ruff
+    cmds:
+      - python3 -m ruff format --check .
+
+  lint-web:
+    desc: Check web/docs formatting with Prettier
+    cmds:
+      - npx prettier --check .
+
+  format-web:
+    desc: Format web/docs files with Prettier
+    cmds:
+      - npx prettier --write .
+
+  pre-commit-install:
+    desc: Install pre-commit git hook scripts
+    cmds:
+      - python3 -m pre_commit install
+
+  pre-commit:
+    desc: Run all pre-commit hooks
+    cmds:
+      - python3 -m pre_commit run --all-files
+
+  compile-less:
+    desc: Compile LESS sources to CSS via pre-commit hook
+    cmds:
+      - python3 -m pre_commit run lessc --all-files
 
   ### Translation related
 
@@ -78,4 +119,3 @@ tasks:
 
           echo "Copying translations for locale ${locale} from ${source} to ${target}..."
           cp -r "${source}" "${target}"
-

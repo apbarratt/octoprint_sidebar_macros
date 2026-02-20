@@ -1,0 +1,44 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Task: lint-py",
+      "type": "shell",
+      "command": "task lint-py",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Task: format-py",
+      "type": "shell",
+      "command": "task format-py",
+      "problemMatcher": []
+    },
+    {
+      "label": "Task: lint-web",
+      "type": "shell",
+      "command": "task lint-web",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Task: format-web",
+      "type": "shell",
+      "command": "task format-web",
+      "problemMatcher": []
+    },
+    {
+      "label": "Task: pre-commit",
+      "type": "shell",
+      "command": "task pre-commit",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Task: compile-less",
+      "type": "shell",
+      "command": "task compile-less",
+      "problemMatcher": []
+    }
+  ]
+}
