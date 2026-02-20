@@ -11,7 +11,7 @@ license: MIT
 date: 2020-06-28
 homepage: https://github.com/apbarratt/octoprint_sidebar_macros
 source: https://github.com/apbarratt/octoprint_sidebar_macros
-archive: https://github.com/apbarratt/octoprint_sidebar_macros/archive/refs/heads/main.zip
+archive: https://github.com/apbarratt/octoprint_sidebar_macros/releases/latest/download/Sidebar-Macros.zip
 
 tags:
     - sidebar

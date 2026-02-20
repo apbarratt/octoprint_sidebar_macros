@@ -73,7 +73,7 @@ class SidebarMacrosPlugin(
                 "user": "apbarratt",
                 "repo": "octoprint_sidebar_macros",
                 "current": self._plugin_version,
-                "pip": "https://github.com/apbarratt/octoprint_sidebar_macros/archive/{target_version}.zip",
+                "pip": "https://github.com/apbarratt/octoprint_sidebar_macros/releases/download/{target_version}/Sidebar-Macros.zip",
             }
         }
 

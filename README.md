@@ -9,4 +9,4 @@ Fork maintained by apbarratt. Original plugin by Mikhail Poluboyarinov.
 Install via the bundled [Plugin Manager](https://docs.octoprint.org/en/main/bundledplugins/pluginmanager.html)
 or manually using this URL:
 
-    https://github.com/apbarratt/octoprint_sidebar_macros/archive/refs/heads/main.zip
+    https://github.com/apbarratt/octoprint_sidebar_macros/releases/latest/download/Sidebar-Macros.zip
