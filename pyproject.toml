@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "Sidebar-Macros"
-version = "0.4.1"
+version = "0.4.2"
 description = "OctoPrint plugin to create various GCODE macros and display them in the sidebar menu."
 authors = [
     { name = "Mikhail Poluboyarinov", email = "mikle.sol@gmail.com" },
