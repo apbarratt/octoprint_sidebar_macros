@@ -66,7 +66,7 @@ class SidebarMacrosPlugin(
 
     def get_update_information(self):
         return {
-            "sidebarmacros": {
+            "macro": {
                 "displayName": "Sidebar Macros",
                 "displayVersion": self._plugin_version,
                 "type": "github_release",
