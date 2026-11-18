@@ -32,7 +32,7 @@ class SidebarMacrosPlugin(
                 new_macros.append(macros)
             self._settings.set(["macros"], new_macros)
             self._settings.set(["column"], 1)
-        if current < 2:
+        if current is None or current < 2:
             new_macros = []
             self._logger.info(self._settings.get(["macros"]))
             for macros in self._settings.get(["macros"]):

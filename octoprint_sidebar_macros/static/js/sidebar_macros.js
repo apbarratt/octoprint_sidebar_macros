@@ -10,7 +10,6 @@ $(function () {
         self.settings = parameters[0];
         self.loginState = parameters[1];
         self.connectionState = parameters[2];
-        self.terminal = parameters[3]; //Hooks into the Terminal Tab
         self.isActive = function (data) {
             const dop = data.dop();
             if (dop && self.connectionState.isPrinting()) {
@@ -54,12 +53,7 @@ $(function () {
     }
     OCTOPRINT_VIEWMODELS.push({
         construct: MacroViewModel,
-        dependencies: [
-            "settingsViewModel",
-            "loginStateViewModel",
-            "connectionViewModel",
-            "terminalViewModel"
-        ],
+        dependencies: ["settingsViewModel", "loginStateViewModel", "connectionViewModel"],
         elements: ["#sidebar_plugin_macro"]
     });
 });
